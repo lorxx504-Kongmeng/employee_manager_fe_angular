@@ -13,6 +13,7 @@ export class HttpService {
 
   public getEmployee(): Observable<IEmployee[]> {
 
+
     return this.http.get<IEmployee[]>(`${this.apiSeverUrl}/employee/all`);
   }
 }
